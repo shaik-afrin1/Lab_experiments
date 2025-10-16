@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 25px;
+}
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 18px auto;
+}
+/* Mobile styles */
+@media (max-width: 600px) {
+    h1 { font-size: 1.3em; }
+    body { margin: 7px; }
+    .responsive-img { margin: 10px auto; }
+}

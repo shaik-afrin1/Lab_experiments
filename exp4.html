@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sweet Treats Bakery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1 id="home">Sweet Treats Bakery</h1>
+    </header>
+    <section id="slideshow">
+        <div class="slides fade">
+            <img src="11.jpg" alt="Cupcakes">
+            <div class="label">Delicious Cupcakes</div>
+        </div>
+        <div class="slides fade">
+            <img src="22.jpg" alt="Bread">
+            <div class="label">Fresh Artisan Bread</div>
+        </div>
+        <div class="slides fade">
+            <img src="33.jpg" alt="Cookies">
+            <div class="label">Homemade Cookies</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </section>
+    <section id="products">
+        <h2>Our Favorites</h2>
+        <p>Enjoy daily fresh bakes including cakes, breads, cookies, and more!</p>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Your neighborhood bakery serving sweet creations since 1990.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Sweet Treats Bakery</p>
+    </footer>
+    <script src="slideshow.js"></script>
+</body>
+</html>

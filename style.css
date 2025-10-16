@@ -1,0 +1,59 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: #fff7f0; }
+header { background: #e48eac; padding: 60px 0 20px 0; position: relative; }
+h1 { margin-top: 70px; text-align: center; color: #3e143b; }
+nav {
+  position: fixed;
+  top: 0; left: 0; width: 100%;
+  background: #ad4175; z-index: 1000;
+  color: white;
+}
+nav ul {
+  display: flex; justify-content: center; list-style: none; padding: 8px 0;
+}
+nav ul li { margin: 0 20px; }
+nav ul a { color: #fff; text-decoration: none; font-weight: bold; font-size: 1.1em; }
+
+section { padding: 30px 15px; max-width: 800px; margin: 0 auto; }
+footer { text-align: center; background: #ad4175; color: white; padding: 16px 0; }
+
+/* Slideshow styles */
+#slideshow {
+  position: relative; margin: 30px auto; max-width: 70vw; height: 300px; overflow: hidden; background: #fff;
+  border-radius: 12px; box-shadow: 0 4px 16px #0001;
+}
+.slides { display: none; height: 100%; position: absolute; width: 100%; }
+.slides img { width: 100%; height: 100%; object-fit: cover; border-radius: 12px 12px 0 0;}
+.label { background: #ad4175cc; color: #fff; padding: 10px; position: absolute; bottom: 15px; left: 20px; border-radius: 7px}
+.prev, .next {
+  cursor: pointer; position: absolute; top: 50%;
+  width: auto; margin-top: -22px; padding: 12px;
+  color: white; font-size: 24px; font-weight: bold;
+  transition: 0.3s; background: #ad4175aa; border-radius: 4px;
+  user-select: none; z-index: 2
+}
+.prev { left: 8px }
+.next { right: 8px }
+
+form input, form textarea {
+  width: 100%; padding: 8px; margin: 7px 0 18px 0; border: 1px solid #ddd; border-radius: 6px;
+}
+form textarea { resize: vertical; min-height: 80px; }
+form button {
+  background: #e48eac; color: #3e143b; border: none; padding: 10px 25px;
+  border-radius: 6px; font-size: 1em; cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  nav ul li { margin: 0 8px; }
+  #slideshow { height: 180px; }
+  section { padding: 18px 7px; }
+  h1 { font-size: 1.7em }
+}
+@media screen and (max-width: 430px) {
+  header { padding-top: 45px }
+  nav ul { flex-direction: column; }
+  nav ul li { margin: 10px 0; }
+  h1 { font-size: 1.2em }
+}

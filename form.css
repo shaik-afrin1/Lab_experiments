@@ -1,0 +1,10 @@
+body { font-family: Arial, sans-serif; background: #f5f5fa; }
+.container { max-width: 400px; margin: 40px auto; background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 2px 14px #0001; }
+label { display: block; margin-top: 10px; }
+input { width: 100%; padding: 7px; margin-top: 3px; border: 2px solid #ccc; border-radius: 5px; outline: none; transition: border-color 0.3s; }
+input:focus { border-color: #7676d8; }
+.error { color: #e33535; background: #ffe9e9; display: block; margin: 4px 0; font-size: 0.85em; padding: 2px 8px; border-radius: 4px; }
+input.valid { border-color: #42d949; background: #e8ffe9; }
+input.invalid { border-color: #e33535; background: #fff1f2; }
+.success { margin: 15px 0 0 0; color: #42d949; font-weight: bold; text-align: center; font-size: 1.15em; }
+button { margin-top: 18px; width: 100%; padding: 10px; background: #7676d8; color: #fff; border: none; border-radius: 5px; font-size: 1.1em; cursor: pointer; }
